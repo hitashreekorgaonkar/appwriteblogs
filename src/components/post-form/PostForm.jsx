@@ -65,7 +65,7 @@ const PostForm = ({ post }) => {
 
       return value
         .trim()
-        .toLocaleLowerCase()
+        .toLowerCase()
         .replace(/[^a-zA-Z\d\s]+/g, "-")
         .replace(/\s/g, "-");
 
