@@ -48,10 +48,10 @@ const PostForm = ({ post }) => {
           ...data,
           userId: userData.$id,
         });
-      }
 
-      if (dbPost) {
-        navigate(`/post/${dbPost.$id}`);
+        if (dbPost) {
+          navigate(`/post/${dbPost.$id}`);
+        }
       }
     }
   };
