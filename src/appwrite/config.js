@@ -40,7 +40,7 @@ export default function PostForm({ post }) {
       }
     } else {
       const file = await appwriteService.uploadFile(data.image[0]);
-
+      console.log("1 file", file);
       if (file) {
         const fileId = file.$id;
         data.featuredImage = fileId;

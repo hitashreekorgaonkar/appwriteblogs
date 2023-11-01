@@ -40,6 +40,7 @@ const PostForm = ({ post }) => {
     } else {
       //TODO: 27:00 min video 25
       const file = await appwriteService.uploadFile(data.image[0]);
+      console.log("2 file", file);
 
       if (file) {
         const fileId = file.$id;
