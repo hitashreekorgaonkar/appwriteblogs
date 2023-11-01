@@ -35,7 +35,7 @@ export default function Post() {
   return post ? (
     <div className="py-8">
       <Container>
-        Name: {userData.name}
+        User Name: {userData.name}
         <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
           <img
             src={appwriteService.getFilePreview(post.featuredImage)}
