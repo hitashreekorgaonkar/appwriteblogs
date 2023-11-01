@@ -117,6 +117,7 @@ export class Service {
   }
 
   getFilePreview(fileId) {
+    console.log("3 fileId", fileId);
     return this.bucket.getFilePreview(conf.appwriteBucketId, fileId);
   }
 }
